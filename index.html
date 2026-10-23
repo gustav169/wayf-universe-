@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080711">
+    <meta name="description" content="Entre no universo do WAYF BOYS. Conheça os cinco integrantes e explore sua música.">
+    <title>WAYF BOYS | Um novo universo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="carregamento" id="carregamento" aria-label="Carregando o universo">
+        <div class="carregamento-orbe"></div>
+        <p>ESTABELECENDO CONEXÃO COM O UNIVERSO</p>
+        <span>UNIVERSO WAYF // 001</span>
+    </div>
+
+    <canvas id="estrelas" aria-hidden="true"></canvas>
+    <div class="brilho-cursor" id="brilhoCursor" aria-hidden="true"></div>
+
+    <div class="portal-abertura" id="portalAbertura" aria-hidden="true">
+        <div class="portal-anel portal-anel-1"></div>
+        <div class="portal-anel portal-anel-2"></div>
+        <div class="portal-anel portal-anel-3"></div>
+        <div class="portal-nucleo"></div>
+        <p>ATRAVESSANDO A FRONTEIRA</p>
+    </div>
+
+    <header class="cabecalho">
+        <a class="logotipo" href="#inicio" aria-label="WAYF BOYS — início">WAYF<span>®</span></a>
+
+        <button class="botao-menu" id="botaoMenu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+        <nav class="navegacao" id="navegacao">
+            <a href="#universo">O UNIVERSO</a>
+            <a href="#integrantes">INTEGRANTES</a>
+            <a href="#musica">MÚSICAS</a>
+        </nav>
+
+        <a class="link-cabecalho" href="#integrantes">DESCUBRA <span>↗</span></a>
+    </header>
+
+    <main>
+        <section class="inicio" id="inicio">
+            <div class="grade-espacial"></div>
+            <div class="orbita-gigante"></div>
+
+            <div class="inicio-conteudo">
+                <p class="selo revelar"><span class="ponto-ativo"></span> UMA NOVA FREQUÊNCIA FOI DETECTADA</p>
+                <p class="nome-coreano revelar">웨이프 보이즈</p>
+
+                <h1 class="titulo-principal revelar">
+                    WAYF
+                    <span>BOYS<span class="ponto-titulo">.</span></span>
+                </h1>
+
+                <p class="descricao-inicio revelar">
+                    Cinco mentes. Um universo.
+                    <br><span>Arte sem limites.</span>
+                </p>
+
+                <button class="botao-entrar revelar" id="botaoEntrar">
+                    <span>↗</span> ENTRAR NO UNIVERSO
+                </button>
+
+                <div class="informacoes-inicio revelar">
+                    <span>SEUL, COREIA DO SUL</span>
+                    <span>DESDE 2026</span>
+                </div>
+            </div>
+
+            <div class="texto-lateral">ONDE A ARTE ENCONTRA A LIBERDADE</div>
+            <a class="indicador-rolagem" href="#universo">DESLIZE PARA EXPLORAR ↓</a>
+            <span class="contador-secao">01 / 04</span>
+        </section>
+
+        <section class="secao universo" id="universo">
+            <div class="rotulo-secao revelar">
+                <span>01 — O COMEÇO</span>
+                <span>SEJA BEM-VINDO AO WAYF</span>
+            </div>
+
+            <div class="grade-universo">
+                <div class="universo-titulo revelar">
+                    <p class="sobretitulo">MUITO MAIS QUE UM GRUPO</p>
+                    <h2>ESTE É<br><span>O NOSSO CAMINHO.</span></h2>
+                    <div class="linha-decorativa"></div>
+                </div>
+
+                <div class="universo-texto revelar">
+                    <p class="texto-destaque">Um mundo onde a individualidade se transforma em arte.</p>
+                    <p>O WAYF BOYS é um grupo de cinco integrantes que busca expressar sua identidade por meio da música, da criatividade e da liberdade artística.</p>
+                    <p>O nome WAYF vem de <em>Where Art Yields Freedom</em>, expressão que significa “Onde a arte gera liberdade”. Essa ideia está no centro da identidade do grupo.</p>
+                    <a class="link-texto" href="#integrantes">CONHEÇA OS CINCO <span>↘</span></a>
+                </div>
+            </div>
+
+            <div class="estatisticas revelar">
+                <div><strong>05</strong><span>PERSONALIDADES</span></div>
+                <div><strong>01</strong><span>UNIVERSO COMPARTILHADO</span></div>
+                <div><strong>∞</strong><span>LIBERDADE CRIATIVA</span></div>
+            </div>
+        </section>
+
+        <section class="secao integrantes" id="integrantes">
+            <div class="rotulo-secao revelar">
+                <span>02 — OS INTEGRANTES</span>
+                <span>CINCO ENERGIAS DIFERENTES</span>
+            </div>
+
+            <div class="cabecalho-integrantes revelar">
+                <div>
+                    <p class="sobretitulo">ESCOLHA SUA DIMENSÃO</p>
+                    <h2>CONHEÇA <span>OS CINCO.</span></h2>
+                </div>
+                <p>Cinco histórias individuais que se encontram em uma mesma frequência.</p>
+            </div>
+
+            <div class="grade-integrantes">
+                <button class="cartao-integrante revelar" data-integrante="andrew" style="--cor-integrante:#b89aff">
+                    <div class="foto-integrante">
+                        <img src="assets/andrew.jpg" alt="Fotografia oficial de Andrew, integrante do WAYF BOYS" loading="lazy">
+                        <span class="numero-integrante">01 / WAYF</span>
+                        <span class="inicial-integrante">A</span>
+                        <span class="legenda-foto">LIBERDADE CRIATIVA</span>
+                        <span class="seta-cartao">↗</span>
+                    </div>
+                    <div class="dados-integrante"><div><h3>ANDREW</h3><p>앤드류</p></div><span>+</span></div>
+                </button>
+
+                <button class="cartao-integrante revelar" data-integrante="junmyeong" style="--cor-integrante:#9eb7ff">
+                    <div class="foto-integrante">
+                        <img src="assets/junmyeong.jpg" alt="Fotografia oficial de Junmyeong, integrante do WAYF BOYS" loading="lazy">
+                        <span class="numero-integrante">02 / WAYF</span>
+                        <span class="inicial-integrante">J</span>
+                        <span class="legenda-foto">NOVA DIMENSÃO</span>
+                        <span class="seta-cartao">↗</span>
+                    </div>
+                    <div class="dados-integrante"><div><h3>JUNMYEONG</h3><p>준명</p></div><span>+</span></div>
+                </button>
+
+                <button class="cartao-integrante revelar" data-integrante="anderson" style="--cor-integrante:#65ead0">
+                    <div class="foto-integrante">
+                        <img src="assets/anderson.jpg" alt="Fotografia oficial de Anderson, integrante do WAYF BOYS" loading="lazy">
+                        <span class="numero-integrante">03 / WAYF</span>
+                        <span class="inicial-integrante">A.</span>
+                        <span class="legenda-foto">ENERGIA AUTÊNTICA</span>
+                        <span class="seta-cartao">↗</span>
+                    </div>
+                    <div class="dados-integrante"><div><h3>ANDERSON</h3><p>앤더슨</p></div><span>+</span></div>
+                </button>
+
+                <button class="cartao-integrante revelar" data-integrante="samuel" style="--cor-integrante:#ff9ac9">
+                    <div class="foto-integrante">
+                        <img src="assets/samuel.jpg" alt="Fotografia oficial de Samuel, integrante do WAYF BOYS" loading="lazy">
+                        <span class="numero-integrante">04 / WAYF</span>
+                        <span class="inicial-integrante">S</span>
+                        <span class="legenda-foto">SOM E ESSÊNCIA</span>
+                        <span class="seta-cartao">↗</span>
+                    </div>
+                    <div class="dados-integrante"><div><h3>SAMUEL</h3><p>사무엘</p></div><span>+</span></div>
+                </button>
+
+                <button class="cartao-integrante revelar" data-integrante="ryan" style="--cor-integrante:#ffc779">
+                    <div class="foto-integrante">
+                        <img src="assets/ryan.jpg" alt="Fotografia oficial de Ryan, integrante do WAYF BOYS" loading="lazy">
+                        <span class="numero-integrante">05 / WAYF</span>
+                        <span class="inicial-integrante">R</span>
+                        <span class="legenda-foto">NOVA FREQUÊNCIA</span>
+                        <span class="seta-cartao">↗</span>
+                    </div>
+                    <div class="dados-integrante"><div><h3>RYAN</h3><p>라이언</p></div><span>+</span></div>
+                </button>
+            </div>
+
+            <p class="aviso-fotos"></p>
+        </section>
+
+        <section class="secao musica" id="musica">
+            <div class="rotulo-secao revelar">
+                <span>03 — DIMENSÃO SONORA</span>
+                <span>EXPLORE OS LANÇAMENTOS</span>
+            </div>
+
+            <div class="grade-musica">
+                <div class="capa-musical revelar">
+                    <div class="anel-capa anel-capa-1"></div>
+                    <div class="anel-capa anel-capa-2"></div>
+                    <div class="nucleo-capa"><span>WAYF</span><strong>BOYS<br>DO.</strong></div>
+                    <span class="selo-capa">SINGLE DE ESTREIA · 2026</span>
+                </div>
+
+                <div class="conteudo-musical revelar">
+                    <p class="sobretitulo">A PRIMEIRA TRANSMISSÃO</p>
+                    <h2 id="tituloMusica">WAYF BOYS<br><span>DO.</span></h2>
+                    <p id="descricaoMusica">O primeiro capítulo da jornada musical do grupo. Dê o play e descubra o início deste universo.</p>
+
+                    <div class="seletor-musicas" aria-label="Escolha um videoclipe">
+                        <button class="botao-musica ativo" data-video="debut">WAYF BOYS DO</button>
+                        <button class="botao-musica" data-video="swag">SWAG</button>
+                        <button class="botao-musica" data-video="a4m">A4M</button>
+                    </div>
+
+                    <div class="reprodutor">
+                        <iframe id="videoMusica"
+                            src="https://www.youtube-nocookie.com/embed/diTn6dbJcy4?rel=0"
+                            title="Videoclipe do WAYF BOYS"
+                            loading="lazy"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+
+                    <p class="nota-musical" id="notaMusical">Se o vídeo não carregar, abra o conteúdo no YouTube pelo link abaixo.</p>
+                    <a class="botao-assistir" id="linkVideo" href="https://www.youtube.com/watch?v=diTn6dbJcy4" target="_blank" rel="noopener noreferrer">ASSISTIR NO YOUTUBE ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="encerramento">
+            <div class="portal-encerramento"></div>
+            <p class="sobretitulo revelar">O UNIVERSO TAMBÉM É SEU</p>
+            <h2 class="revelar">ISTO É APENAS<br><span>O COMEÇO.</span></h2>
+            <p class="texto-encerramento revelar">A jornada continua. Descubra, escute e acompanhe cada novo capítulo.</p>
+            <a class="botao-entrar revelar" href="https://www.instagram.com/wayfboys/" target="_blank" rel="noopener noreferrer">ACOMPANHAR O GRUPO ↗</a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="logotipo" href="#inicio">WAYF<span>®</span></a>
+        <p>EXPERIÊNCIA DE FÃ · CRIADA COM CRIATIVIDADE</p>
+        <a href="#inicio">VOLTAR AO TOPO ↑</a>
+    </footer>
+
+    <div class="modal-integrante" id="modalIntegrante" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="modalNome">
+        <div class="painel-modal">
+            <button class="fechar-modal" id="fecharModal" aria-label="Fechar perfil">×</button>
+            <p class="sobretitulo">ARQUIVO DO INTEGRANTE</p>
+            <img id="modalFoto" src="" alt="" class="foto-modal">
+            <span class="simbolo-modal" id="modalSimbolo">A</span>
+            <h2 id="modalNome">ANDREW</h2>
+            <p id="modalCoreano" class="nome-modal-coreano"></p>
+            <div class="linha-decorativa"></div>
+            <p id="modalDescricao" class="descricao-modal"></p>
+            <span id="modalIndice" class="indice-modal"></span>
+        </div>
+    </div>
+</body>
+</html>
