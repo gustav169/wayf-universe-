@@ -1244,3 +1244,336 @@ main, .cabecalho, .rodape {
         padding: 28px 22px;
     }
 }
+
+/* ========================================
+   WAYF BOYS — IDENTIDADE VERMELHA E PRETA
+   Mantém a estrutura e as animações atuais
+======================================== */
+
+:root {
+    --fundo: #080808;
+    --superficie: #11090b;
+    --texto: #f5f2f2;
+    --texto-suave: #b5a3a6;
+    --roxo: #ed1735;
+    --azul: #a90d26;
+    --linha: rgba(237, 23, 53, 0.22);
+}
+
+/* Fundo geral */
+body {
+    background-color: var(--fundo);
+}
+
+/* Carregamento */
+.carregamento {
+    background: #080808;
+}
+
+.carregamento-orbe {
+    border-color: #ed1735;
+    box-shadow:
+        0 0 35px #ed173555,
+        inset 0 0 25px #ed173533;
+}
+
+@keyframes pulsar {
+    to {
+        transform: scale(1.16);
+        box-shadow:
+            0 0 60px #ed173599,
+            inset 0 0 35px #ed173566;
+    }
+}
+
+/* Brilho do cursor */
+.brilho-cursor {
+    background: radial-gradient(
+        circle,
+        #ed17351c,
+        transparent 70%
+    );
+}
+
+/* Portal cinematográfico */
+.portal-abertura {
+    background: radial-gradient(
+        circle,
+        #650b1c 0%,
+        #20070d 38%,
+        #030303 78%
+    );
+}
+
+.portal-anel {
+    border-color: #ff294d99;
+    box-shadow:
+        0 0 30px #ed173522,
+        inset 0 0 35px #ed173515;
+}
+
+.portal-anel-2 {
+    border-color: #a90d2688;
+}
+
+.portal-anel-3 {
+    border-color: #ffffff88;
+}
+
+.portal-nucleo {
+    box-shadow:
+        0 0 30px 15px #ed173588,
+        0 0 100px 50px #a90d2644;
+}
+
+/* Cabeçalho e navegação */
+.logotipo span,
+.navegacao a:hover,
+.link-cabecalho:hover,
+.link-cabecalho span {
+    color: #ff294d;
+}
+
+button:focus-visible,
+a:focus-visible {
+    outline-color: #ed1735;
+}
+
+/* Abertura principal */
+.inicio {
+    background:
+        radial-gradient(
+            ellipse at 70% 50%,
+            #650b1c55,
+            transparent 43%
+        ),
+        radial-gradient(
+            ellipse at 20% 80%,
+            #31081145,
+            transparent 48%
+        ),
+        var(--fundo);
+}
+
+.grade-espacial {
+    background-image:
+        linear-gradient(#ed173520 1px, transparent 1px),
+        linear-gradient(90deg, #ed173520 1px, transparent 1px);
+}
+
+.orbita-gigante {
+    border-color: #ed173522;
+    background:
+        radial-gradient(circle at 40% 35%, #ed173522, transparent 35%),
+        radial-gradient(circle, #a90d2615, transparent 65%);
+    box-shadow:
+        0 0 100px #ed173510,
+        inset 0 0 100px #ed17350c;
+}
+
+.orbita-gigante::before {
+    border-color: #ed173530;
+}
+
+.orbita-gigante::after {
+    border-color: #a90d2635;
+}
+
+.ponto-ativo {
+    background: #ff294d;
+    box-shadow: 0 0 12px #ff294d;
+}
+
+.nome-coreano {
+    color: #ff7185;
+}
+
+.titulo-principal {
+    text-shadow: 0 0 65px #ed173518;
+}
+
+.titulo-principal > span {
+    -webkit-text-stroke-color: #ffb2bd;
+}
+
+.ponto-titulo {
+    color: #ed1735;
+}
+
+.botao-entrar {
+    border-color: #ed173566;
+}
+
+.botao-entrar > span {
+    color: #ff294d;
+}
+
+.botao-entrar:hover {
+    background: #ed173520;
+    border-color: #ff7185;
+    box-shadow: 0 0 40px #ed173525;
+}
+
+/* Seções e títulos */
+.universo {
+    background: radial-gradient(
+        ellipse at 0 50%,
+        #650b1c1c,
+        transparent 45%
+    );
+}
+
+.sobretitulo {
+    color: #e58b98;
+}
+
+.universo-titulo h2 span,
+.cabecalho-integrantes h2 span,
+.conteudo-musical h2 span,
+.encerramento h2 span {
+    -webkit-text-stroke-color: #ff7185;
+}
+
+.linha-decorativa {
+    background: linear-gradient(90deg, #ed1735, transparent);
+}
+
+.universo-texto em {
+    color: #ff9eac;
+}
+
+.link-texto {
+    border-bottom-color: #ed173570;
+}
+
+.link-texto span {
+    color: #ff294d;
+}
+
+.estatisticas strong {
+    color: #ff7185;
+}
+
+/* Integrantes */
+.integrantes {
+    background: #0b0809;
+}
+
+.foto-integrante {
+    background:
+        radial-gradient(ellipse at 50% 35%, #651322, transparent 50%),
+        linear-gradient(145deg, #291017, #0d090a 75%);
+    border-color: #ffffff18;
+}
+
+.foto-integrante::after {
+    background: linear-gradient(
+        180deg,
+        #08080810 35%,
+        #080808ed 100%
+    );
+}
+
+.cartao-integrante:hover .foto-integrante {
+    border-color: var(--cor-integrante, #ed1735);
+}
+
+/* Música */
+.musica {
+    background: radial-gradient(
+        ellipse at 25% 60%,
+        #650b1c24,
+        transparent 50%
+    );
+}
+
+.capa-musical {
+    background: radial-gradient(
+        circle,
+        #651322,
+        #19090d 48%,
+        #080808 80%
+    );
+    border-color: #ed173530;
+    box-shadow: 0 20px 100px #ed173512;
+}
+
+.anel-capa {
+    border-color: #ff294d55;
+}
+
+.anel-capa-2 {
+    border-color: #a90d2655;
+}
+
+.nucleo-capa {
+    text-shadow: 0 0 40px #ed173560;
+}
+
+.nucleo-capa span {
+    color: #ffb2bd;
+}
+
+.botao-musica:hover,
+.botao-musica.ativo {
+    border-color: #ed1735;
+    background: #ed17351c;
+}
+
+.reprodutor {
+    border-color: #ed173544;
+}
+
+.botao-assistir {
+    background: #ed1735;
+    color: #ffffff;
+}
+
+.botao-assistir:hover {
+    background: #ff4963;
+}
+
+/* Encerramento */
+.encerramento {
+    background: radial-gradient(
+        ellipse at center,
+        #650b1c66,
+        transparent 65%
+    );
+}
+
+.portal-encerramento {
+    border-color: #ed173522;
+    box-shadow:
+        0 0 100px #ed17350a,
+        inset 0 0 100px #ed17350a;
+}
+
+/* Modal dos integrantes */
+.modal-integrante {
+    background: #030303dc;
+}
+
+.painel-modal {
+    border-color: #ed173555;
+    background:
+        radial-gradient(ellipse at top right, #65132240, transparent 50%),
+        #10090b;
+}
+
+.simbolo-modal {
+    color: #ff7185;
+}
+
+.indice-modal {
+    color: #ff7185;
+}
+
+/* Menu mobile */
+@media (max-width: 760px) {
+    .navegacao {
+        background: #0b0809f5;
+        border-bottom-color: var(--linha);
+    }
+}
+
